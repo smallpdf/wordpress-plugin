@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "smallpdf/embed-pdf",
+	"version": "1.0.0",
+	"title": "Embed PDF with Smallpdf",
+	"category": "embed",
+	"description": "Insert a PDF viewer in your post and pages using Smallpdf's Embed PDF.",
+	"example": {
+		"attributes": {
+			"preview": true
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [ "left", "center", "right", "wide", "full" ]
+	},
+	"attributes": {
+		"url": {
+			"type": "string",
+			"default": ""
+		},
+		"height": {
+			"type": "number",
+			"default": 360
+		},
+		"preview": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "smallpdf-embed-pdf",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

@@ -85,3 +85,7 @@ If the problem persists, verify that the PDF file is publicly accessible and not
 
 = 1.0.0 =
 * Initial release of Embed PDF with Smallpdf
+
+== Development ==
+The source code for this plugin is available on GitHub:
+[GitHub Repository](https://github.com/smallpdf/wordpress-plugin)

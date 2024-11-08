@@ -19,7 +19,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	const { url, height = 360, preview } = attributes;
 	const blockProps = useBlockProps();
 	const pdfWidgetRef = useRef( null ); // Reference to the widget container
-	const embedPdfSmallpdf = window.embedPdfSmallpdf || {
+	const embedPdfBySmallpdf = window.embedPdfBySmallpdf || {
 		blockPreviewImageUrl: '',
 	};
 
@@ -49,7 +49,7 @@ export default function Edit( { attributes, setAttributes } ) {
 			<Fragment>
 				<div className="block-preview-container">
 					<img
-						src={ embedPdfSmallpdf.blockPreviewImageUrl }
+						src={ embedPdfBySmallpdf.blockPreviewImageUrl }
 						className="block-preview-image"
 						alt="Block Preview"
 					/>
@@ -61,9 +61,9 @@ export default function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Settings', 'smallpdf-embed-pdf' ) }>
+				<PanelBody title={ __( 'Settings', 'embed-pdf-by-smallpdf' ) }>
 					<TextControl
-						label={ __( 'Height (px)', 'smallpdf-embed-pdf' ) }
+						label={ __( 'Height (px)', 'embed-pdf-by-smallpdf' ) }
 						value={ height }
 						onChange={ ( value ) =>
 							setAttributes( {
@@ -73,7 +73,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						type="number"
 					/>
 					<TextControl
-						label={ __( 'PDF URL', 'smallpdf-embed-pdf' ) }
+						label={ __( 'PDF URL', 'embed-pdf-by-smallpdf' ) }
 						value={ url }
 						onChange={ ( value ) =>
 							setAttributes( { url: value } )
@@ -81,7 +81,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						type="text"
 						help={ __(
 							'Paste the URL of an external PDF file or select a file from the library.',
-							'smallpdf-embed-pdf'
+							'embed-pdf-by-smallpdf'
 						) }
 					/>
 				</PanelBody>
@@ -96,7 +96,7 @@ export default function Edit( { attributes, setAttributes } ) {
 								}
 								icon="trash"
 							>
-								{ __( 'Delete PDF', 'smallpdf-embed-pdf' ) }
+								{ __( 'Delete PDF', 'embed-pdf-by-smallpdf' ) }
 							</ToolbarButton>
 						</ToolbarGroup>
 					) }
@@ -125,7 +125,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						labels={ {
 							title: __(
 								'Upload your PDF',
-								'smallpdf-embed-pdf'
+								'embed-pdf-by-smallpdf'
 							),
 						} }
 					/>

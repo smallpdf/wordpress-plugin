@@ -10,10 +10,10 @@
  * Author URI:        https://smallpdf.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       smallpdf-embed-pdf
+ * Text Domain:       embed-pdf-by-smallpdf
  * Domain Path:       /languages
  *
- * @package EmbedPDFSmallpdf
+ * @package EmbedPdfBySmallpdf
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -21,30 +21,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants
-define( 'SMALLPDF_EMBED_PDF_VERSION', '1.0.0' );
-define( 'SMALLPDF_EMBED_PDF_DIR', plugin_dir_path( __FILE__ ) );
-define( 'SMALLPDF_EMBED_PDF_URL', plugin_dir_url( __FILE__ ) );
+define( 'EMBED_PDF_BY_SMALLPDF_VERSION', '1.0.0' );
+define( 'EMBED_PDF_BY_SMALLPDF_DIR', plugin_dir_path( __FILE__ ) );
+define( 'EMBED_PDF_BY_SMALLPDF_URL', plugin_dir_url( __FILE__ ) );
 
-require_once SMALLPDF_EMBED_PDF_DIR . 'includes/class-smallpdf-embed-pdf.php';
+require_once EMBED_PDF_BY_SMALLPDF_DIR . 'includes/class-embed-pdf-by-smallpdf.php';
 
 // Activation & deactivation hooks
-register_activation_hook( __FILE__, 'smallpdf_embed_pdf_activate' );
-register_deactivation_hook( __FILE__, 'smallpdf_embed_pdf_deactivate' );
+register_activation_hook( __FILE__, 'embed_pdf_by_smallpdf_activate' );
+register_deactivation_hook( __FILE__, 'embed_pdf_by_smallpdf_deactivate' );
 
 // Activation callback function
-function smallpdf_embed_pdf_activate() {
+function embed_pdf_by_smallpdf_activate() {
     // Register the plugin version in database
-    update_option( 'smallpdf_embed_pdf_version', SMALLPDF_EMBED_PDF_VERSION );
+    update_option( 'EMBED_PDF_BY_SMALLPDF_VERSION', EMBED_PDF_BY_SMALLPDF_VERSION );
 }
 
 // Deactivation callback function
-function smallpdf_embed_pdf_deactivate() {
+function embed_pdf_by_smallpdf_deactivate() {
     // Unregister the plugin version from database
-    delete_option( 'smallpdf_embed_pdf_version' );
+    delete_option( 'EMBED_PDF_BY_SMALLPDF_VERSION' );
 }
 
-function smallpdf_embed_pdf_init() {
-    $plugin = new SmallpdfEmbedPdf();
+function embed_pdf_by_smallpdf_init() {
+    $plugin = new EmbedPdfBySmallpdf();
     $plugin->run();
 }
-add_action( 'plugins_loaded', 'smallpdf_embed_pdf_init' );
+add_action( 'plugins_loaded', 'embed_pdf_by_smallpdf_init' );

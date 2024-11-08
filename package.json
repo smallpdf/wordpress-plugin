@@ -13,12 +13,11 @@
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start",
-		"i18n:make-pot": "wp i18n make-pot ./ languages/smallpdf-embed-pdf.pot --exclude=src",
+		"i18n:make-pot": "wp i18n make-pot ./ languages/embed-pdf-by-smallpdf.pot --exclude=src",
 		"i18n:make-json": "wp i18n make-json languages --no-purge --pretty-print"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^30.4.0",
-		"sass-loader": "^16.0.3"
+		"@wordpress/scripts": "^27.9.0"
 	},
 	"dependencies": {
 		"react": "^18.3.1"
@@ -26,11 +25,8 @@
 	"files": [
 		"build",
 		"languages",
-		"smallpdf-embed-pdf.php",
+		"includes",
+		"embed-pdf-by-smallpdf.php",
 		"readme.txt"
-	],
-	"resolutions": {
-		"sass-loader": "13.2.0",
-    	"sass": "1.56.0"
-	}
+	]
 }

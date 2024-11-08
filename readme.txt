@@ -5,7 +5,7 @@ Auhtor:			   Smallpdf
 Author URI:        https://smallpdf.com
 Contributors:      Smallpdf
 Tags:              PDF, embed PDF, PDF viewer, document, Smallpdf
-Tested up to:      6.6.2
+Tested up to:      6.6
 Requires at least: 6.5
 Requires PHP:      7.4
 Stable tag:        1.0.0
@@ -49,7 +49,7 @@ By using this plugin, you agree to Smallpdf's [Terms & Conditions](https://small
 
 1. Download the plugin as `.zip` file
 2. Unzip the downloaded archive
-3. Upload `smallpdf-pdf-embed` folder into your `/wp-content/plugins/` directory
+3. Upload `embed-pdf-by-smallpdf` folder into your `/wp-content/plugins/` directory
 4. Go to _Plugins_ → _Installed Plugins_
 5. _Activate_ Embed PDF with Smallpdf
 
@@ -85,7 +85,3 @@ If the problem persists, verify that the PDF file is publicly accessible and not
 
 = 1.0.0 =
 * Initial release of Embed PDF with Smallpdf
-
-== Development ==
-The source code for this plugin is available on GitHub:
-[GitHub Repository](https://github.com/smallpdf/wordpress-plugin)

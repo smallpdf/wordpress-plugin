@@ -1,5 +1,8 @@
 === Embed PDF with Smallpdf ===
-
+Plugin Name:       Embed PDF with Smallpdf
+Version:           1.0.0
+Auhtor:			   Smallpdf
+Author URI:        https://smallpdf.com
 Contributors:      Smallpdf
 Tags:              PDF, embed PDF, PDF viewer, document, Smallpdf
 Tested up to:      6.6.2
@@ -82,3 +85,7 @@ If the problem persists, verify that the PDF file is publicly accessible and not
 
 = 1.0.0 =
 * Initial release of Embed PDF with Smallpdf
+
+== Development ==
+The source code for this plugin is available on GitHub:
+[GitHub Repository](https://github.com/smallpdf/wordpress-plugin)

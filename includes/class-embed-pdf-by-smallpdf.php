@@ -14,6 +14,7 @@ class EmbedPdfBySmallpdf {
 		add_action( 'enqueue_block_assets', array( $this, 'enqueue_block_assets' ) );
         add_action( 'enqueue_block_editor_assets', array( $this, 'embed_pdf_by_smallpdf_translations' ) );
         add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_shortcode_script' ) );
         add_shortcode( 'pdf', array( $this, 'pdf_shortcode' ) );
     }
 

@@ -24,7 +24,7 @@ class EmbedPdfBySmallpdf {
 
     public function register_block_type() {
 		wp_register_script(
-			'smallpdf-embed-pdf-by-smallpdf-editor-script', // TODO: changing this breaks the i18n
+			'smallpdf-embed-pdf-by-smallpdf-editor-script',
 			EMBED_PDF_BY_SMALLPDF_URL . 'build/blocks/embed-pdf/index.js',
 			array( 'wp-blocks', 'react', 'wp-i18n', 'wp-block-editor' ),
             EMBED_PDF_BY_SMALLPDF_VERSION,

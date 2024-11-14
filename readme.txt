@@ -83,6 +83,9 @@ If the problem persists, verify that the PDF file is publicly accessible and not
 
 == Changelog ==
 
+= 1.0.1 =
+* Fix widget rendering when using the `pdf` shortcode
+
 = 1.0.0 =
 * Initial release of Embed PDF with Smallpdf
 

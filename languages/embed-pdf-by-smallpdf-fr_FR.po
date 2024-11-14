@@ -23,8 +23,8 @@ msgstr "Visionneuse de PDF avec Smallpdf"
 
 #. Plugin URI of the plugin
 #: embed-pdf-by-smallpdf.php
-msgid "https://smallpdf.com/pdf-embed"
-msgstr "https://smallpdf.com/pdf-embed"
+msgid "https://smallpdf.com/embed-pdf"
+msgstr "https://smallpdf.com/embed-pdf"
 
 #. Description of the plugin
 #: embed-pdf-by-smallpdf.php

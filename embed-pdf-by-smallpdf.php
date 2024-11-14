@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Embed PDF with Smallpdf
- * Plugin URI:		  https://smallpdf.com/pdf-embed
+ * Plugin URI:		  https://smallpdf.com/embed-pdf
  * Description:       Embed PDF by Smallpdf is a free and secure plugin that allows you to embed PDF documents directly into your posts and pages. No API keys are required.
  * Version:           1.0.0
  * Requires at least: 6.5

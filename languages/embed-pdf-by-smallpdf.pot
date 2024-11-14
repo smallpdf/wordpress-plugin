@@ -21,7 +21,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: embed-pdf-by-smallpdf.php
-msgid "https://smallpdf.com/pdf-embed"
+msgid "https://smallpdf.com/embed-pdf"
 msgstr ""
 
 #. Description of the plugin
